@@ -18,14 +18,14 @@ conda create -n ucp python=3.7 matplotlib numpy pandas keras scikit-learn
 source activate ucp
 ```
 
-[Optional] It's is possible to create the required environment by using the provided `ucp.yml` file. To do it so, run the following command instead:
+** Optional: ** It's is possible to create the required environment by using the provided `ucp.yml` file. To do it so, run the following command instead:
 
 ```
 conda env create -f ucp.yml
 ```
 
 
-3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `ucp` environment. 
+1. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `ucp` environment. 
 
 ```
 conda install ipykernel
@@ -41,4 +41,4 @@ jupyter notebook project.ipynb
 5. Before running code, change the kernel to match the `ucp` environment by using the drop-down menu (**Kernel > Change kernel > ucp**). Then, follow the instructions in the notebook.
 
 
-6. You will likely need to install more pip packages to run this project.  Please curate the list of packages needed to run your project in the `requirements.txt` file in the repository.
+6. A complete list of packages needed to run your project is provided in the `requirements.txt` file in the repository.
