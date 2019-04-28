@@ -1,6 +1,6 @@
 # Udacity Machine Learning Engineer Nanodegree: Capstone Project
 
-*Applying ML techniques for temporomandibular disorders diagnosis*
+*Applied machine learning for temporomandibular disorders diagnosis*
 
 ## Project Instructions
 
@@ -11,18 +11,34 @@ git clone https://github.com/manolomaldonado/udacity_capstone_project
 cd udacity_capstone_project
 ```
 
-2. Ensure you have the required packages installed in your python 3.7 environment
+2. Create and activate a new environment. We are going to use python 3.7 and install numpy, pandas, keras, matplotlib and scikit-learn packages.
 
-- pandas
-- numpy
-- keras
-- sklearn
-- matplotlib
+```
+conda create -n ucp python=3.7 matplotlib numpy pandas keras scikit-learn
+source activate ucp
+```
 
-3. You will likely need to install more pip packages to run this project.  Please curate the list of packages needed to run your project in the `requirements.txt` file in the repository.
+[Optional] It's is possible to create the required environment by using the provided `ucp.yml` file. To do it so, run the following command instead:
+
+```
+conda env create -f ucp.yml
+```
+
+
+3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `ucp` environment. 
+
+```
+conda install ipykernel
+python -m ipykernel install --user --name ucp --display-name "ucp"
+```
+
 
 4. Open the notebook.
 ```
 jupyter notebook project.ipynb
 ```
 
+5. Before running code, change the kernel to match the `ucp` environment by using the drop-down menu (**Kernel > Change kernel > ucp**). Then, follow the instructions in the notebook.
+
+
+6. You will likely need to install more pip packages to run this project.  Please curate the list of packages needed to run your project in the `requirements.txt` file in the repository.
