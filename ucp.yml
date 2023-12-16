@@ -88,5 +88,5 @@ dependencies:
   - yaml=0.1.7=hc338f04_2
   - zeromq=4.3.1=h0a44026_3
   - zlib=1.2.11=h1de35cc_3
-prefix: /anaconda3/envs/ucp
+prefix: /usr/local/anaconda3/envs/ucp
 
